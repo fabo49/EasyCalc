@@ -1,0 +1,283 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".EasyCalc">
+
+
+    <Button
+        android:background="@drawable/cuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Punto"
+        android:id="@+id/buttonPunto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp" />
+
+    <Button
+        android:background="@drawable/cuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cero"
+        android:id="@+id/button0"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/buttonPunto" />
+
+    <Button
+        android:background="@drawable/cuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Igual"
+        android:id="@+id/buttonIgual"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button0"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"/>
+
+    <Button
+        android:background="@drawable/cuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Uno"
+        android:id="@+id/button1"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:layout_above="@+id/buttonPunto"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="@drawable/cuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Dos"
+        android:id="@+id/button2"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:layout_above="@+id/button0"
+        android:layout_toEndOf="@+id/buttonPunto" />
+
+    <Button
+        android:background="@drawable/cuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tres"
+        android:id="@+id/button3"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:layout_above="@+id/buttonIgual"
+        android:layout_toEndOf="@+id/button0" />
+
+    <Button
+        android:background="@drawable/cuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cuatro"
+        android:id="@+id/button4"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cinco"
+        android:id="@+id/button5"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadrado"
+        android:layout_above="@+id/button2"
+        android:layout_toEndOf="@+id/button1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Seis"
+        android:id="@+id/button6"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadrado"
+        android:layout_above="@+id/button3"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Siete"
+        android:id="@+id/button7"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="100dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadrado"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ocho"
+        android:id="@+id/button8"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadrado"
+        android:layout_above="@+id/button4"
+        android:layout_toEndOf="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nueve"
+        android:id="@+id/button9"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadrado"
+        android:layout_above="@+id/button6"
+        android:layout_toEndOf="@+id/button5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Clear"
+        android:id="@+id/buttonCE"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="50dp"
+        android:maxWidth="60dp"
+        android:minHeight="50dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadradolight"
+        android:layout_alignTop="@+id/button9"
+        android:layout_toEndOf="@+id/button9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Por"
+        android:id="@+id/buttonPor"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="50dp"
+        android:maxWidth="60dp"
+        android:minHeight="50dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadradolight"
+        android:layout_below="@+id/buttonCE"
+        android:layout_toEndOf="@+id/button6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Division"
+        android:id="@+id/buttonDiv"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="45dp"
+        android:maxWidth="60dp"
+        android:minHeight="45dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadradolight"
+        android:layout_below="@+id/buttonPor"
+        android:layout_toEndOf="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Suma"
+        android:id="@+id/buttonMas"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="45dp"
+        android:maxWidth="60dp"
+        android:minHeight="45dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadradolight"
+        android:layout_below="@+id/buttonDiv"
+        android:layout_toEndOf="@+id/buttonIgual" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Resta"
+        android:id="@+id/buttonMenos"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:maxHeight="50dp"
+        android:maxWidth="60dp"
+        android:minHeight="50dp"
+        android:minWidth="60dp"
+        android:background="@drawable/cuadradolight"
+        android:layout_below="@+id/buttonMas"
+        android:layout_toEndOf="@+id/buttonIgual" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textResult"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button7"
+        android:background="@color/backgroundColor"
+        android:textColor="@color/buttonColorLight"
+        android:textSize="60dp"
+        android:textStyle="normal"
+        android:gravity="center_vertical|right"
+        android:fontFamily="Roboto"
+        android:elevation="15dp" />
+
+</RelativeLayout>
